@@ -7,7 +7,7 @@ const BUZZWORDS = [
   "Zero Trust",
   "DDoS",
   "Incident response plan",
-  "PPI",
+  "PII",
   "Honeypot",
   "DevSecOps",
   "Multi-Factor",

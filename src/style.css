@@ -21,6 +21,10 @@ table {
     table-layout: fixed;
 }
 
+tr {
+    /* display: none; */
+}
+
 td {
     padding: 25px;
     border-spacing: 0px;
@@ -34,7 +38,7 @@ td {
 .active {
     background-color: #46C016;
     color: black;
-
+    text-decoration: line-through;
 }
 
 .alert {
