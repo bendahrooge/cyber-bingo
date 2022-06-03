@@ -21,10 +21,6 @@ table {
     table-layout: fixed;
 }
 
-tr {
-    /* display: none; */
-}
-
 td {
     padding: 25px;
     border-spacing: 0px;
@@ -46,6 +42,10 @@ td {
     background: rgba(255, 0, 0, 0.3);
 }
 
+.small-screen {
+    display: none;
+}
+
 /* Dont use too much ink */
 @media print
 {   
@@ -56,10 +56,26 @@ td {
 
     td {
         border: 1px solid black;
+        background-color: white;
     }
 
     .no-print, .no-print *
     {
         display: none !important;
+    }
+}
+
+/* Special settings for smaller screens */
+@media only screen and (max-width: 800px) {
+    td {
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .small-screen {
+        display: block;
     }
 }

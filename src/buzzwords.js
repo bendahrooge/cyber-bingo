@@ -5,7 +5,7 @@ const BUZZWORDS = [
   "SIEM",
   "Artificial intelligence",
   "Zero Trust",
-  "DDoS",
+  "(D)DoS",
   "Incident response plan",
   "PII",
   "Honeypot",

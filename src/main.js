@@ -55,13 +55,13 @@ $(document).ready(function () {
     $(".alert").hide()
   }
 
-  $("h1").click(() => {
+  $("h1").on("click", () => {
     if (confirm("Are you sure you want to generate a new bingo board?")) {
       renderBingo(generateBingo())
     }
   })
 
-  $("td").click((tile) => {
+  $(document).on("click", "td", (tile) => {
     $(tile.target).toggleClass("active")
 
     let bingo_data = JSON.parse(localStorage.getItem("bingo"))
