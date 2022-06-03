@@ -1,3 +1,14 @@
-1. Change the words
-1. Generate multipule pages
-1. Hashes to verify authenicty
+# Cyber Bingo
+
+For use at your favorite conference/seminar/talk/etc.
+Flipped tiles are saved to your browsers localStorage or the page can be printed.
+
+Live site: https://bingo.ramhacks.org/
+
+### Ideas for improvement
+
+1. More words!
+1. Ability to generate multipule/printable pages
+1. Hashes/cryptography to verify authenicty of generated pages
+1. Fade in effect for tiles
+1. X background for clicked tiles? (stretched SVG?)
