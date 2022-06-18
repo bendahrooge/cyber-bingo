@@ -1,6 +1,10 @@
 import { BUZZWORDS } from "./buzzwords.js"
 const BINGO_SIZE = 5
 
+/**
+ * Renders an array as a bingo board to the DOM
+ * @param {Array} board
+ */
 const renderBingo = (board) => {
   $("table").empty()
 
@@ -21,6 +25,10 @@ const renderBingo = (board) => {
   }
 }
 
+/**
+ * Generates a new randomized bingo board
+ * @returns {Array}
+ */
 const generateBingo = () => {
   let word_universe = [...BUZZWORDS]
 
@@ -48,6 +56,7 @@ const generateBingo = () => {
 }
 
 $(document).ready(function () {
+  // Re-populate the last state of the bingo board
   if (!localStorage.getItem("bingo")) {
     renderBingo(generateBingo())
   } else {
@@ -55,12 +64,14 @@ $(document).ready(function () {
     $(".alert").hide()
   }
 
+  // On clicks of the title, generate a new bingo board
   $("h1").on("click", () => {
     if (confirm("Are you sure you want to generate a new bingo board?")) {
       renderBingo(generateBingo())
     }
   })
 
+  // On clicks of bingo elements, flip their state
   $(document).on("click", "td", (tile) => {
     $(tile.target).toggleClass("active")
 
