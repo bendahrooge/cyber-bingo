@@ -9,6 +9,11 @@ main {
     justify-content: space-around;
 }
 
+main > div {
+    max-width: 1000px;
+
+}
+
 h1 {
     font-size: 3rem;
     font-family: 'Zen Dots', cursive;
@@ -19,6 +24,7 @@ h1 {
 table {
     border-collapse: collapse;
     table-layout: fixed;
+    width: 100%;
 }
 
 td {
@@ -46,7 +52,7 @@ td {
     display: none;
 }
 
-/* Dont use too much ink */
+/* Dont use too much black ink :/ */
 @media print
 {   
     * {
