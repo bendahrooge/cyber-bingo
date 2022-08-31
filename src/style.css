@@ -52,6 +52,11 @@ td {
     display: none;
 }
 
+.no-print {
+    font-size: 0.85rem;
+}
+
+
 /* Dont use too much black ink :/ */
 @media print
 {   
