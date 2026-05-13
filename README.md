@@ -5,7 +5,7 @@ Flipped tiles are saved to your browsers localStorage or the page can be printed
 
 Pull requests welcome for improvements or more hot new buzzwords!
 
-Live site: https://bingo.ramhacks.org/
+Live site: https://bendahrooge.github.io/cyber-bingo/
 
 ### Ideas for improvement
 
